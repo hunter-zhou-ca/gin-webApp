@@ -26,5 +26,4 @@ func ConnectDataBase() {
 
  	//database.Create(&p1)
  	//database.Create(&p2)
-
 }

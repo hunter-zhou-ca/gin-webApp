@@ -4,7 +4,7 @@ import(
 	//Package gin implements a HTTP web framework called gin
 	"github.com/gin-gonic/gin"
 	"api/models"
-	"api/controllers"
+	"api/handlers"
 	"api/middleware"
 )
 
@@ -23,8 +23,8 @@ func main(){
 	//check token
 	auth := r.Group("/", jwt.MiddlewareFunc())
 
-	auth.GET("/users", controllers.GetPeople)
-	auth.GET("/user/:id", controllers.GetPerson)
+	auth.GET("/users", handlers.GetPeople)
+	auth.GET("/user/:id", handlers.GetPerson)
 
 	r.Run(":8080")
 }

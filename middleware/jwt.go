@@ -37,6 +37,5 @@ func authenticator(c *gin.Context) (interface{}, error) {
 		return user, nil
 	}
 	return nil, jwt.ErrFailedAuthentication
-
 }
 
