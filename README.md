@@ -19,21 +19,26 @@
 	```
 4. test in Postman
 	* to get token 
-	```localhost:8080/login
+	```
+	localhost:8080/login
 	```
 		copy the token and paste in the authorization tag(Bearer Token)
 	* get all users
-	```localhost:8080/users
+	```
+	localhost:8080/users
 	```
 		it will return 
 	```[ { "id": 1, "name":"John", "age":31, "city":"New York" }, { "id": 2, "name":"Doe", "age":22, "city":"Vancouver" } ] 
 	```
 	* get a perticular user
-	```localhost:8080/user/:id
+	```
+	localhost:8080/user/:id
 	```
 		for example
-	```localhost:8080/user/2
+	```
+	localhost:8080/user/2
 	``` 
 		will return 
-	```{ "id": 2, "name":"Doe", "age":22, "city":"Vancouver" }
+	```
+	{ "id": 2, "name":"Doe", "age":22, "city":"Vancouver" }
 	```
